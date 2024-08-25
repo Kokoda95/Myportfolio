@@ -79,6 +79,69 @@
   border-color: #007bff;
 }
 
+
+/* Additional CSS for Certificates Section */
+#certificates {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+#certificates h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.certificate-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 97px;
+}
+
+.certificate-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: inherit;
+  width: 300px; /* Adjust the width as per your need  */
+}
+
+.certificate-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.certificate-item h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.certificate-item p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.certificate-item a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.certificate-item a:hover {
+  background-color: #0056b3;
+}
+
 /* Additional CSS for Contact Section */
 .contact-section {
   padding: 50px 0;
@@ -170,7 +233,7 @@ html {
           <div class="card-body">
             <h5 class="card-title">Recipe Site Traffic</h5>
             <p class="card-text">This project involved analyzing recipe data to predict which recipes will generate high traffic when featured on the homepage. The goal was to correctly predict popular recipes 80% of the time to boost overall site traffic and subscriptions. The project included data validation, exploratory data analysis, model development and evaluation, and the creation of business metrics for monitoring performance.</p>
-            <a href="https://github.com/Kokoda95/Quant/blob/main/Recipe_Site_Traffic.ipynb" class="btn btn-primary">Source Code</a>
+            <a href="https://github.com/Kokoda95/Quant/blob/main/Recipe_Site_Traffic.ipynb" class="btn btn-primary">source code</a>
           </div>
         </div>
       </div>
@@ -181,7 +244,7 @@ html {
           <div class="card-body">
             <h5 class="card-title">Predicting Movie Rental Durations</h5>
             <p class="card-text">This project involved building a regression model for a DVD rental firm to predict rental duration. I built the couple of models, evaluate them and recommend the best one.</p>
-            <a href="https://github.com/Kokoda95/Quant/blob/main/Predicting_Movie_Rental_Durations.ipynb" class="btn btn-primary">Source Code</a>
+            <a href="https://github.com/Kokoda95/Quant/blob/main/Predicting_Movie_Rental_Durations.ipynb" class="btn btn-primary">source code</a>
           </div>
         </div>
       </div>
@@ -191,8 +254,8 @@ html {
           <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
             <h5 class="card-title">Modeling Car Insurance Claim Outcomes</h5>
-            <p class="card-text">The project involved developing a Logistic Regression model to predict whether a customer will file a car insurance claim during their policy period. The goal is to identify the single most impactful feature from the dataset that maximizes the model's accuracy, aiding in pricing and risk management.</p>
-            <a href="https://github.com/Kokoda95/Quant/blob/main/Modeling_Car_Insurance_Claims.ipynb" class="btn btn-primary">Source Code</a>
+            <p class="card-text">The project involved developing a Logistic Regression model to predict whether a customer will file a car insurance claim during their policy period. The goal was to identify the single most impactful feature from the dataset that maximizes the model's accuracy, aiding in pricing and risk management.</p>
+            <a href="https://github.com/Kokoda95/Quant/blob/main/Modeling_Car_Insurance_Claims.ipynb" class="btn btn-primary">source code</a>
           </div>
         </div>
       </div>
@@ -203,7 +266,7 @@ html {
           <div class="card-body">
             <h5 class="card-title">Evaluate a Manufacturing Process</h5>
             <p class="card-text">This project focused on enhancing the monitoring and control of a manufacturing process by implementing Statistical Process Control (SPC). SPC uses data-driven methods to ensure the process operates within an acceptable range, defined by an Upper Control Limit (UCL) and Lower Control Limit (LCL). By analyzing historical manufacturing data using SQL, the goal was to define these limits and identify any deviations that require adjustments. This approach aims to maintain a smooth, high-quality production process.</p>
-            <a href="https://github.com/Kokoda95/SQLprojects/blob/master/Evaluating_manufacturing_process.ipynb" class="btn btn-primary">Source Code</a>
+            <a href="https://github.com/Kokoda95/SQLprojects/blob/master/Evaluating_manufacturing_process.ipynb" class="btn btn-primary">source code</a>
           </div>
         </div>
       </div>
@@ -214,7 +277,7 @@ html {
           <div class="card-body">
             <h5 class="card-title">Reporting in SQL</h5>
             <p class="card-text">This project utilized MySQL to create a database from the Olympics dataset, enabling analysis of key questions such as the most decorated athletes, the number of athletes from Nobel-Prized countries, countries with high medal rates, and the tallest athletes by % GDP region. The results were visualized in a Power BI dashboard for clear insights.</p>
-            <a href="https://github.com/Kokoda95/SQLprojects/tree/master/OlympicsProject" class="btn btn-primary">Source Code</a>
+            <a href="https://github.com/Kokoda95/SQLprojects/tree/master/OlympicsProject" class="btn btn-primary">source code</a>
           </div>
         </div>
       </div>
@@ -225,7 +288,7 @@ html {
           <div class="card-body">
             <h5 class="card-title">Dr. Semmelweis and the Importance of Handwashing</h5>
             <p class="card-text">This project involved reanalyzing the data that led Dr. Ignaz Semmelweis to discover the life-saving importance of handwashing in the 1840s. His findings dramatically reduced the mortality rate from childbed fever at the Vienna General Hospital, highlighting the impact of hygiene on patient outcomes.</p>
-            <a href="https://github.com/Kokoda95/Quant/blob/main/Handwash_Discovering.ipynb" class="btn btn-primary">Source Code</a>
+            <a href="https://github.com/Kokoda95/Quant/blob/main/Handwash_Discovering.ipynb" class="btn btn-primary">source code</a>
           </div>
         </div>
       </div>
@@ -247,7 +310,7 @@ html {
           <div class="card-body">
             <h5 class="card-title">Python</h5>
             <p class="card-text">Proficient in Python for data analysis, machine learning, and automation. Experienced in using libraries like Pandas, NumPy, and Scikit-learn to solve complex problems and deliver actionable insights.</p>
-            <a href="https://app.datacamp.com/learn/courses?technologies=2&status=completed" class="btn btn-outline-primary">Link to datacamp</a>
+            <a href="https://app.datacamp.com/learn/courses?technologies=2&status=completed" class="btn btn-outline-primary">link to datacamp</a>
           </div>
         </div>
       </div>
@@ -258,7 +321,7 @@ html {
           <div class="card-body">
             <h5 class="card-title">Data Visualization</h5>
             <p class="card-text">Skilled in data visualization, transforming complex data into clear, actionable insights using tools like Matplotlib, Seaborn, ggplot, and Power BI. Adept at creating intuitive and impactful visualizations to support data-driven decisions.</p>
-            <a href="https://app.datacamp.com/learn/courses?technologies=2&status=completed" class="btn btn-outline-primary">Link to datacamp</a>
+            <a href="https://app.powerbi.com/groups/me/reports/20d9f0cb-2428-473e-954a-17f9cad10a46/4595cacb22931c00ac8f?experience=power-bi" class="btn btn-outline-primary">see visualizations</a>
           </div>
         </div>
       </div>
@@ -269,7 +332,7 @@ html {
           <div class="card-body">
             <h5 class="card-title">SQL</h5>
             <p class="card-text">Experienced in SQL for database management, data extraction, and complex query optimization. Proficient in writing efficient SQL queries to analyze data, create reports, and support data-driven decision-making.</p>
-            <a href="https://app.datacamp.com/learn/courses?technologies=3&status=completed" class="btn btn-outline-primary">Link to datacamp</a>
+            <a href="https://app.datacamp.com/learn/courses?technologies=3&status=completed" class="btn btn-outline-primary">link to datacamp</a>
           </div>
         </div>
       </div>
@@ -280,11 +343,37 @@ html {
           <div class="card-body">
             <h5 class="card-title">R</h5>
             <p class="card-text">Proficient in R for statistical analysis, data manipulation, and visualization. Experienced in using R libraries like ggplot2, dplyr, and tidyverse to conduct robust analyses and generate insightful reports.</p>
-            <a href="https://app.datacamp.com/learn/courses?technologies=1&status=completed" class="btn btn-outline-primary">Link to datacamp</a>
+            <a href="https://app.datacamp.com/learn/courses?technologies=1&status=completed" class="btn btn-outline-primary">link to datacamp</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="certificate-container">
+    <div class="certificate-item">
+      <img src="images/certificates/1.png" alt="Certificate Image">
+      <h5>Data Scientist</h5>
+      <p>I earned a certification by passing exams that assessed a range of skills, including Data Management, Exploratory Analysis, Statistical Experimentation, Model Development, coding for production, and effective communication.</p>
+      <a href="https://www.dropbox.com/scl/fi/3vbeh6jxi9xnk8pzjarid/Data_scientist_cert.pdf?rlkey=3yf0sd9vorfvuraylbahbv2pv&st=wl90i1ek&dl=0" target="_blank">view certificate</a>
+    </div>
+    <div class="certificate-item">
+      <img src="images/certificates/2.png" alt="Certificate Image">
+      <h5>SQL Associate</h5>
+      <p>I earned an SQL Associate certification by passing exams that evaluated a range of skills, including Data Management, Exploratory Analysis, Ability to explain database design, Schema interpretation, and more.</p>
+      <a href="https://www.dropbox.com/scl/fi/uqpw7wypzjmyyrv3xizt9/SQL_Associate_cert.pdf?rlkey=4ii2ftbhcniw6kz2jn70s1p3y&st=opfgfx2k&dl=0" target="_blank">view certificate</a>
+    </div>
+    <div class="certificate-item">
+      <img src="images/certificates/3.jpeg" alt="Certificate Image">
+      <h5>Software Development</h5>
+      <p>I earned a Software Development certification after completing courseworks in software engineering fundamentals, database design with SQL, Python Django, and essential soft skills.</p>
+      <a href="https://www.dropbox.com/scl/fi/zx7lw6pqba313vtqilcaq/PLP_Cert.pdf?rlkey=2b1qepkijhmktyfv20y2g0gxp&st=r8x0p759&dl=0" target="_blank">view certificate</a>
+    </div>
+    <!-- Add more certificate items as needed -->
   </div>
 </section>
 
@@ -355,6 +444,9 @@ html {
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item"> 
+          <a class="nav-link" href="#certificates">Certificates</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>

@@ -8,6 +8,40 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <style>
+
+/* CSS for homepage*/
+.fullscreen {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292834; /* Dark background */
+    color: white;
+    position: relative;
+    text-align: center; /* Center the text */
+}
+
+.content {
+    max-width: 800px; /* Limit the width of the content */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5rem; /* Large heading */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem; /* Medium-sized text */
+    margin-bottom: 30px;
+}
+
+.homepage-image {
+    max-width: 40%; /* Make the image responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: adds a slight roundness to image corners */
+}
+
   .about-section {
     text-align: center;
     padding: 50px 0;
@@ -24,6 +58,7 @@
   }
   .about-section p {
     color: #333;
+    font-size: 1rem;
   }
 
   /* Additional CSS for Projects Section */
@@ -35,7 +70,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
 }
 .card-img-top {
-  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  max-height: 300px; /* Adjust this value to fit the image properly in the card */
   object-fit: cover; /* This makes sure the image covers the area properly */
 }
 .card-body {
@@ -46,6 +81,7 @@
 }
 .card-text {
   margin-bottom: 15px;
+  font-size: 1rem;
 }
 
 /* Additional CSS for Skills Section */
@@ -210,9 +246,18 @@ html {
 </head>
 <body>
 
+<!-- New Homepage Section with Static Text and Image -->
+<div id="home" class="fullscreen">
+    <div class="content">
+        <h1>Welcome to My Data Journey</h1>
+        <p>Empowering Decisions with Data</p>
+        <img src="images/home/1.jpg" alt="A description of the image" class="homepage-image">
+    </div>
+</div>
+
 <section id='about' class="about-section">
   <div class="container">
-    <h2>About</h2>
+    <h2>About Me</h2>
     <img src="images/about/1.jpg" alt="About Me">
     <p>Hello! I'm Yasini Muhamedi Kokoda, a dedicated professional with a Master's degree in Applied Mathematics. My passion lies at the intersection of mathematics, data, and technology, fueling my drive to excel as a Data Scientist or Quantitative Analyst. With a strong foundation in mathematical modeling and statistical analysis, I enjoy uncovering patterns and insights hidden within complex data sets. I am skilled in applying advanced mathematical techniques to solve real-world problems, and I am continuously expanding my expertise in machine learning, data visualization, and programming languages like Python, SQL and R.</p>
     <p>My goal is to leverage my analytical skills and technical knowledge to contribute to impactful data-driven solutions across various industries. I am enthusiastic about taking on challenging projects that push the boundaries of what data can reveal, whether it’s through predictive modeling, optimizing processes, or driving innovation.</p>
@@ -276,7 +321,7 @@ html {
           <img src="images/projects/5.jpg" class="card-img-top" alt="Project 5">
           <div class="card-body">
             <h5 class="card-title">Reporting in SQL</h5>
-            <p class="card-text">This project utilized MySQL to create a database from the Olympics dataset, enabling analysis of key questions such as the most decorated athletes, the number of athletes from Nobel-Prized countries, countries with high medal rates, and the tallest athletes by % GDP region. The results were visualized in a Power BI dashboard for clear insights.</p>
+            <p class="card-text">This project utilized MySQL to create a database from the Olympics dataset, enabling analysis of key questions such as the most decorated athletes, the number of athletes from Nobel-Prized countries, countries with high medal rates, and the tallest athletes by % GDP of the region. The results were visualized in a Power BI dashboard for clear insights.</p>
             <a href="https://github.com/Kokoda95/SQLprojects/tree/master/OlympicsProject" class="btn btn-primary">source code</a>
           </div>
         </div>
@@ -427,7 +472,7 @@ html {
 <!-- Sticky Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#home">Portfolio</a>
+    <a class="navbar-brand" href="#home">My Data Journey</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -456,6 +501,13 @@ html {
   </div>
 </nav>
 
+<script>
+  // Smooth scroll for the Home link
+  document.getElementById('home-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  </script>
 
 <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
